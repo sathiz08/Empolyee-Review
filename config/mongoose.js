@@ -9,10 +9,7 @@ const MONGODB_URL = "mongodb+srv://ssathish0024:Sathiz08@main.ov8cjai.mongodb.ne
 
 // connect to database
 exports.connect = () => {
-    mongoose.connect(MONGODB_URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+    mongoose.connect(MONGODB_URL)
     .then(
         // if database connected
         console.log('Database is connected successfullly')
